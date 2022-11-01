@@ -1,0 +1,16 @@
+{
+  "name": "code-challenge-ger",
+  "version": "1.0.0",
+  "description": "Code challenge dor AstroPay",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress open --browser chrome",
+    "cypress": "./node_modules/.bin/cypress open --browser chrome --e2e",
+    "cypressrun": "node_modules\\.bin\\cypress run"
+  },
+  "author": "German Esteban Larcher",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.11.0"
+  }
+}
