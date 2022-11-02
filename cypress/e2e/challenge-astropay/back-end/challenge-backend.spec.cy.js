@@ -14,15 +14,26 @@ describe("TEST CHALLENGE - BACKEND - ASTROPAY", () => {
                 body: 'Body of the challenge'
             }
         }).then(({ body, status }) => {
+            // **********VALIDATING PROPER STATUS=201 **********
             expect(status).to.be.eq(201)
+
+            // **********VALIDATING PROPER USERID=101 **********
             expect(body.userId).to.be.eq(101)
+
+            // **********VALIDATING PROPER ID=101 **********
             expect(body.id).to.be.eq(101)
+
+            // **********VALIDATING PROPER TITLE **********
             expect(body.title).to.be.eq('challenge for Astropay')
+
+            // **********VALIDATING PROPER BODY **********
             expect(body.body).to.be.eq('Body of the challenge')
         })
     })
 
     it.only("2.2 The following endpoint displays the user with id=1.", () => {
+        
+        cy.log('VALIDATING PROPER TITLE')
         cy.request({
             url: 'https://jsonplaceholder.typicode.com/posts/1'
         }).its('body')
