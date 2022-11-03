@@ -2,7 +2,7 @@
 
 describe("TEST CHALLENGE - BACKEND - ASTROPAY", () => {
 
-    it.only("2.1 The following endpoint simulates the insertion of a user to a system.", () => {
+    it("2.1 The following endpoint simulates the insertion of a user to a system.", () => {
 
         cy.request({
             method: 'POST',
@@ -31,7 +31,7 @@ describe("TEST CHALLENGE - BACKEND - ASTROPAY", () => {
         })
     })
 
-    it.only("2.2 The following endpoint displays the user with id=1.", () => {
+    it("2.2 The following endpoint displays the user with id=1.", () => {
         
         cy.log('VALIDATING PROPER TITLE')
         cy.request({
