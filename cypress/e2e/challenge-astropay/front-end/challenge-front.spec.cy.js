@@ -10,7 +10,7 @@ describe("TEST CHALLENGE - FRONT - ASTROPAY", () => {
     beforeEach(() => {
         AutomationpracticeHomePage.login()
     })
-    it.only("1.1 Access the website.", () => {
+    it("1.1 Access the website.", () => {
 
         // I Access the Womens section and select the Blouses option,
         AutomationpracticeHomePage.clickOnOptionBlouses()
